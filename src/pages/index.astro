@@ -29,4 +29,17 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
         <button onclick="window.location.href='https://test-button-app.netlify.app/?closeButtonClicked=true';">Close2</button>
 
     </p>
+<p>
+<script>
+  function closeApp() {
+    if (window.Capacitor) {
+      Capacitor.Plugins.Browser.close();
+    } else {
+      console.log('Capacitor is not available.');
+    }
+  }
+</script>
+<button onclick="closeApp()">Close3</button>
+
+</p>
 </Layout>
