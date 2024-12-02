@@ -5,5 +5,17 @@ import EdgeFunctionExplainer from '../../../components/EdgeFunctionExplainer.ast
 
 <Layout title="Not Australia">
     <h1 class="mb-8">You&apos;re not in Australia!</h1>
+
+<p class="mb-8">
+        <button onclick="location.href='close-app://';">Close In-App Browser</button>
+    </p>
+
+<p class="mb-8">
+        <button onclick="window.location.href='close-app://';">Close</button>
+    </p>
+<p class="mb-8">
+        <button onclick="window.location.href='https://test-button-app.netlify.app/?closeButtonClicked=true';">Close2</button>
+
+    </p>
     <EdgeFunctionExplainer />
 </Layout>
